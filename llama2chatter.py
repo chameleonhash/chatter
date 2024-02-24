@@ -27,7 +27,7 @@ with st.sidebar:
         llm = 'a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5'
     Creativity = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
     Focus = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
-    Response Length = st.sidebar.slider('max_length', min_value=32, max_value=128, value=120, step=8)
+    Length = st.sidebar.slider('max_length', min_value=32, max_value=128, value=120, step=8)
     st.markdown('Follow me on [TikTok](https://tiktok.com/@chameleonhash/)!')
 
 # Store LLM generated responses
